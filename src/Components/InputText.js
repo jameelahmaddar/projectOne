@@ -3,13 +3,11 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, TextInput } from 'react-native';
 
 // create a component
-const InputText = ({
-    placeholder
-}) => {
+const InputText = ({Title}) => {
     return (
-        <View style={{flex:1}}>
-            <TextInput style={{flex:1,marginTop:20,backgroundColor:'pink'}} 
-            placeholder='title'/>
+        <View >
+            <TextInput style={{backgroundColor:"pink",borderRadius:15,height:50,width:350,marginBottom:20}} 
+            placeholder={Title}/>
         </View>
     );
 };

@@ -8,20 +8,18 @@ import styles from './styles';
 // create a component
 const Home = ({navigation}) => {
     return (
-        <View style={styles.headerstyle}>
-            <View style={styles.headerView}>
+        
+            <View style={{flex:1,alignItems:'center',marginTop:15}}>
             <Header title="MY to do"  to do/>
-
             
-          
-            </View>
              <View style={{flex:1,height:10,}}>
-             <InputText />
+             <InputText Title="Enter your name "/>
+             <InputText Title="Enter details"/>
             <Button title='go to Login screen'
-            onPress={() => navigation.navigate('Login')}/>
-        </View>
-        </View>
-    );
+            onPress={() => navigation.navigate('Login',{Title:"xyz"})}
+            />
+        </View> 
+        </View> );
 };
 
 

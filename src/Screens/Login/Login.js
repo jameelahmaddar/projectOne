@@ -8,15 +8,18 @@ import styles from './styles';
 // create a component
 const Login = ({navigation}) => {
     return (
-        <View style={{alignItems:'center'}}>
-            <View style>
+        <View style={{flex:1,alignItems:'center',marginTop:15}}>
+        
            <Header title="Login"/>
-
-           </View>
+           <View style={{flex:1,height:10,marginTop:15}}>
+           <InputText Title="Enter name"
            
-
-           <View style={{}}>
-           <InputText title="enter details"/>
+           
+           
+           
+           
+           />
+           <InputText Title="Enter your details"/>
             <Button title='go back home screen'
             onPress={()=>{navigation.goBack()}}
             />
